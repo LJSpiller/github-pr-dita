@@ -5,7 +5,7 @@
 
 > **Note:** This repository is a self-guided training project and technical writing portfolio sample created to explore structured authoring, single-sourcing concepts, and DITA 1.3 architecture in Visual Studio Code. It provides a focused workflow sample rather than an exhaustive documentation suite.
 
-## Project & Architecture Highlights
+## Project and Architecture Highlights
 
 * **Key Definitions (`ditamaps/keys.ditamap`):** Centralized variable management for platform names, repository references, and review SLAs using key definitions.
 * **Content Reuse (`reusable/conrefs.dita`):** Single-sourced warning and important notes reused across task topics via `conref`.
