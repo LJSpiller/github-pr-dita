@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DOCTYPE DITA Task//EN" "task.dtd">
+<task id="t-create-pull-request">
+  <title>Creating a Pull Request</title>
+  <shortdesc>Initiate a formal review request to propose branch changes into the primary repository.</shortdesc>
+  <taskbody>
+    <prereq>
+      <p>Ensure all local commits are pushed to your topic branch in <ph keyref="org-repo"/>.</p>
+      <note conref="../reusable/conrefs.dita#conrefs/note-branch-protection"/>
+    </prereq>
+    <steps>
+      <step>
+        <cmd>Navigate to the repository homepage in <ph keyref="platform-name"/>.</cmd>
+      </step>
+      <step>
+        <cmd>Click <b>Compare &amp; pull request</b> alongside your recently pushed branch.</cmd>
+      </step>
+      <step>
+        <cmd>Provide a descriptive title and fill out the pull request body template.</cmd>
+      </step>
+      <step>
+        <cmd>Assign relevant code owners and reviewers, then click <b>Create pull request</b>.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+  <!-- Exclude admin-only steps by default for standard peer reviewers -->
+  <prop action="exclude" att="audience" val="admin"/>
+</val>

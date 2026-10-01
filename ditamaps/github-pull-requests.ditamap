@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us">
+  <title>GitHub Pull Request &amp; Review Governance Guide</title>
+
+  <!-- Imports key definitions from keys.ditamap -->
+  <mapref href="keys.ditamap"/>
+
+  <!-- Conceptual Framework -->
+  <topicgroup collection-type="family">
+    <topicmeta>
+      <navtitle>Concepts &amp; Architecture</navtitle>
+    </topicmeta>
+    <topicref href="../concepts/c-pr-lifecycle.dita"/>
+    <topicref href="../concepts/c-branch-strategy.dita"/>
+  </topicgroup>
+
+  <!-- Procedural Workflows -->
+  <topicgroup collection-type="sequence">
+    <topicmeta>
+      <navtitle>Procedural Workflows</navtitle>
+    </topicmeta>
+    <topicref href="../tasks/t-create-pull-request.dita"/>
+    <topicref href="../tasks/t-review-pull-request.dita"/>
+    <topicref href="../tasks/t-resolve-conflicts.dita"/>
+  </topicgroup>
+
+  <!-- Technical References -->
+  <topicgroup>
+    <topicmeta>
+      <navtitle>Technical References</navtitle>
+    </topicmeta>
+    <topicref href="../references/r-merge-strategies.dita"/>
+    <topicref href="../references/r-pr-statuses.dita"/>
+  </topicgroup>
+</map>

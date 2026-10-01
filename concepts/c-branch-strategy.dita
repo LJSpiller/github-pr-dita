@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DOCTYPE DITA Concept//EN" "concept.dtd">
+<concept id="c-branch-strategy">
+  <title>Branching Governance and Conventions</title>
+  <shortdesc>Branching strategies establish consistent naming patterns and isolate active development from production-ready code.</shortdesc>
+  <conbody>
+    <p>In <ph keyref="platform-name"/>, long-lived default branches are protected from direct commits to preserve release stability.</p>
+    <p>Contributors must isolate changes in short-lived feature or bugfix branches adhering to standardized naming prefixes:</p>
+    <ul>
+      <li><b>feature/:</b> Work supporting new capabilities, APIs, or major documentation updates.</li>
+      <li><b>fix/:</b> Targeted repairs for reported defects or incorrect guidance.</li>
+      <li><b>docs/:</b> Minor prose improvements, typo corrections, or maintenance.</li>
+    </ul>
+  </conbody>
+</concept>

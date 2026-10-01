@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="conrefs">
+  <title>Reusable Elements</title>
+  <body>
+    <note id="note-force-push-warning" type="warning">
+      Force-pushing to a shared branch overwrites commit history and can break active code reviews for other team members.
+    </note>
+    <note id="note-branch-protection" type="important">
+      Direct commits to the default branch are blocked by repository protection rules. All changes must originate from a pull request.
+    </note>
+  </body>
+</topic>

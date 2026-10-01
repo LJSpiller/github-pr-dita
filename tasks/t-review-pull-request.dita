@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t-review-pull-request">
+  <title>Reviewing a Pull Request</title>
+  <shortdesc>Evaluate proposed changes, leave line-by-line feedback, and submit an approval or change request.</shortdesc>
+  <taskbody>
+    <prereq>
+      <p>You must have read access to <ph keyref="org-repo"/>.</p>
+      <note conref="../reusable/conrefs.dita#conrefs/note-force-push-warning"/>
+    </prereq>
+    <steps>
+      <step>
+        <cmd>Navigate to the <b>Pull Requests</b> tab in <ph keyref="platform-name"/>.</cmd>
+      </step>
+      <step>
+        <cmd>Select the pull request you want to review and open the <b>Files changed</b> tab.</cmd>
+      </step>
+      <step>
+        <cmd>Hover over a specific line of code or Markdown and click the plus icon to add an inline comment.</cmd>
+      </step>
+      <step audience="admin">
+        <cmd>Verify that required status checks and code owner approvals meet internal repository policy prior to merging.</cmd>
+      </step>
+      <step>
+        <cmd>Click <b>Review changes</b> and select one of the following submission types:</cmd>
+        <choices>
+          <choice><b>Comment:</b> General feedback without explicit approval or rejection.</choice>
+          <choice><b>Approve:</b> Confirms the changes are ready to merge.</choice>
+          <choice audience="admin"><b>Request changes:</b> Requires feedback resolution before merging (Enforced for repository maintainers).</choice>
+        </choices>
+      </step>
+    </steps>
+  </taskbody>
+</task>

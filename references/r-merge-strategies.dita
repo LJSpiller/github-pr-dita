@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r-merge-strategies">
+  <title>Pull Request Merge Strategies</title>
+  <shortdesc>A reference of supported branch merge strategies, commit preservation rules, and recommended use cases for repository maintainers.</shortdesc>
+  <refbody>
+    <section>
+      <title>Supported Merge Methods</title>
+      <p>Select the appropriate merge method based on branch lifetime and commit history requirements:</p>
+      <table>
+        <tgroup cols="3">
+          <colspec colname="c1" colwidth="1*"/>
+          <colspec colname="c2" colwidth="2*"/>
+          <colspec colname="c3" colwidth="2*"/>
+          <thead>
+            <row>
+              <entry>Strategy</entry>
+              <entry>Commit History Impact</entry>
+              <entry>Recommended Use Case</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><b>Create a Merge Commit</b></entry>
+              <entry>Preserves all individual branch commits and appends an explicit merge commit.</entry>
+              <entry>Feature branches requiring complete historical traceability during audits.</entry>
+            </row>
+            <row>
+              <entry><b>Squash and Merge</b></entry>
+              <entry>Combines all branch commits into a single unified commit on the target branch.</entry>
+              <entry>Documentation edits, minor bug fixes, or long-running PRs with noisy histories.</entry>
+            </row>
+            <row>
+              <entry><b>Rebase and Merge</b></entry>
+              <entry>Reapplies individual commits onto the target branch sequentially without a merge commit.</entry>
+              <entry>Linear repository histories where clean individual commit tracking is required.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

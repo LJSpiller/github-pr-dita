@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DOCTYPE DITA Reference//EN" "reference.dtd">
+<reference id="r-pr-statuses">
+  <title>Pull Request Status Indicators</title>
+  <shortdesc>Reference table of continuous integration status indicators and merge readiness states.</shortdesc>
+  <refbody>
+    <section>
+      <title>Status Badges</title>
+      <table>
+        <tgroup cols="3">
+          <colspec colname="c1" colwidth="1*"/>
+          <colspec colname="c2" colwidth="2*"/>
+          <colspec colname="c3" colwidth="2*"/>
+          <thead>
+            <row>
+              <entry>State</entry>
+              <entry>Description</entry>
+              <entry>Required Action</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><b>Draft</b></entry>
+              <entry>PR is open for active editing and testing.</entry>
+              <entry>Mark as ready for review when complete.</entry>
+            </row>
+            <row>
+              <entry><b>Checks Pending</b></entry>
+              <entry>Automated continuous integration linters are running.</entry>
+              <entry>Wait for build pipeline completion.</entry>
+            </row>
+            <row>
+              <entry><b>Changes Requested</b></entry>
+              <entry>A designated reviewer requested updates.</entry>
+              <entry>Address feedback and re-request review.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DOCTYPE DITA Task//EN" "task.dtd">
+<task id="t-resolve-conflicts">
+  <title>Resolving Merge Conflicts</title>
+  <shortdesc>Reconcile competing branch changes when target branch updates collide with proposed edits.</shortdesc>
+  <taskbody>
+    <prereq>
+      <p>Merge conflicts occur when overlapping lines are modified independently across branches.</p>
+    </prereq>
+    <steps>
+      <step>
+        <cmd>Fetch the latest changes from the default branch into your working environment.</cmd>
+      </step>
+      <step>
+        <cmd>Rebase or merge the target branch into your feature branch locally.</cmd>
+      </step>
+      <step>
+        <cmd>Open conflicting files, locate the conflict markers (<codeph>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</codeph>), and select the correct code or text block.</cmd>
+      </step>
+      <step>
+        <cmd>Stage the resolved files and complete the merge commit.</cmd>
+      </step>
+      <step>
+        <cmd>Push the updated branch history to update the active pull request automatically.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>
