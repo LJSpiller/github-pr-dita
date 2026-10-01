@@ -28,7 +28,7 @@ github-pr-dita/
 ├── tasks/
 │   ├── t-create-pull-request.dita      # Task: Creating a pull request
 │   ├── t-review-pull-request.dita      # Task: Reviewing a pull request
-│   └── t-resolve-conflicts.dita       # Task: Resolving merge conflicts
+│   └── t-resolve-conflicts.dita        # Task: Resolving merge conflicts
 ├── references/
 │   ├── r-merge-strategies.dita         # Reference: Merge options & descriptions
 │   └── r-pr-statuses.dita              # Reference: CI status indicators & badges
