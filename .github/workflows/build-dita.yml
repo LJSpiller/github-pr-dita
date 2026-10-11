@@ -1,0 +1,36 @@
+name: Build DITA output
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # adds a manual "Run workflow" button
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build HTML5 (all audiences)
+        run: |
+          docker run --rm -v "$PWD:/src" ghcr.io/dita-ot/dita-ot:4.4.1 \
+            -i /src/ditamaps/github-pull-requests.ditamap \
+            -o /src/out/html5 -f html5
+
+      - name: Build HTML5 (admin audience only)
+        run: |
+          docker run --rm -v "$PWD:/src" ghcr.io/dita-ot/dita-ot:4.4.1 \
+            -i /src/ditamaps/github-pull-requests.ditamap \
+            -o /src/out/html5-admin -f html5 \
+            --filter=/src/filters/admin-filter.ditaval
+
+      - name: Build PDF
+        run: |
+          docker run --rm -v "$PWD:/src" ghcr.io/dita-ot/dita-ot:4.4.1 \
+            -i /src/ditamaps/github-pull-requests.ditamap \
+            -o /src/out/pdf -f pdf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dita-output
+          path: out/
