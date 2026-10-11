@@ -1,8 +1,6 @@
 name: Build DITA output
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:   # adds a manual "Run workflow" button
 
 jobs:
