@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DOCTYPE DITA Task//EN" "task.dtd">
+<!-- DOCTYPE task PUBLIC "-//OASIS//DOCTYPE DITA Task//EN" "task.dtd" -->
+<!-- DOCTYPE removed for GitHub rendering compatibility -->
 <task id="t-create-pull-request">
   <title>Creating a Pull Request</title>
   <shortdesc>Initiate a formal review request to propose branch changes into the primary repository.</shortdesc>
