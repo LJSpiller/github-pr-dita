@@ -13,20 +13,20 @@ jobs:
 
       - name: Build HTML5 (all audiences)
         run: |
-          docker run --rm -v "$PWD:/src" ghcr.io/dita-ot/dita-ot:4.4.1 \
+          docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
             -o /src/out/html5 -f html5
 
       - name: Build HTML5 (admin audience only)
         run: |
-          docker run --rm -v "$PWD:/src" ghcr.io/dita-ot/dita-ot:4.4.1 \
+          docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
             -o /src/out/html5-admin -f html5 \
             --filter=/src/filters/admin-filter.ditaval
 
       - name: Build PDF
         run: |
-          docker run --rm -v "$PWD:/src" ghcr.io/dita-ot/dita-ot:4.4.1 \
+          docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
             -o /src/out/pdf -f pdf
 
