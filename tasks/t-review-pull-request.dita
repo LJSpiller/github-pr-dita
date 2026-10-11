@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" -->
+<!-- DOCTYPE removed for GitHub rendering compatibility -->
 <task id="t-review-pull-request">
   <title>Reviewing a Pull Request</title>
   <shortdesc>Evaluate proposed changes, leave line-by-line feedback, and submit an approval or change request.</shortdesc>
