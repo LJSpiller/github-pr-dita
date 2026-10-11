@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "reference.dtd">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="r-pr-statuses">
   <title>Pull Request Status Indicators</title>
   <shortdesc>Reference table of continuous integration status indicators and merge readiness states.</shortdesc>
