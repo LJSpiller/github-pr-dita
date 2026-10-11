@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!-- DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd" -->
+<!-- DOCTYPE removed for GitHub rendering compatibility -->
 <reference id="r-merge-strategies">
   <title>Pull Request Merge Strategies</title>
   <shortdesc>A reference of supported branch merge strategies, commit preservation rules, and recommended use cases for repository maintainers.</shortdesc>
