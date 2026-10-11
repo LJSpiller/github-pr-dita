@@ -1,7 +1,7 @@
 name: Build DITA output
 
 on:
-  workflow_dispatch:   # adds a manual "Run workflow" button
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,14 +13,20 @@ jobs:
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
-            -o /src/out/html5 -f html5 --nav-toc=full
+            -o /src/out/html5 -f html5 --nav-toc=full \
+            --args.css=/src/css/custom.css \
+            --args.copycss=yes \
+            --args.csspath=css
 
       - name: Build HTML5 (admin audience only)
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
             -o /src/out/html5-admin -f html5 --nav-toc=full \
-            --filter=/src/filters/admin-filter.ditaval
+            --filter=/src/filters/admin-filter.ditaval \
+            --args.css=/src/css/custom.css \
+            --args.copycss=yes \
+            --args.csspath=css
 
       - name: Build PDF
         run: |
