@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!-- DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" -->
+<!-- DOCTYPE removed for GitHub rendering compatibility -->
 <topic id="conrefs">
   <title>Reusable Elements</title>
   <body>
