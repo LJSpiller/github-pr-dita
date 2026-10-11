@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map xml:lang="en-us">
-  <title>GitHub Pull Request &amp; Review Governance Guide</title>
+  <title>GitHub Pull Request and Review Governance Guide</title>
 
   <!-- Imports key definitions from keys.ditamap -->
   <mapref href="keys.ditamap"/>
@@ -9,7 +9,7 @@
   <!-- Conceptual Framework -->
   <topicgroup collection-type="family">
     <topicmeta>
-      <navtitle>Concepts &amp; Architecture</navtitle>
+      <navtitle>Concepts and Architecture</navtitle>
     </topicmeta>
     <topicref href="../concepts/c-pr-lifecycle.dita"/>
     <topicref href="../concepts/c-branch-strategy.dita"/>
