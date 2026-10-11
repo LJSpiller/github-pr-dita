@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<map xml:lang="en-us">
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
   <title>GitHub Pull Request &amp; Review Governance Guide</title>
 
   <!-- Imports key definitions from keys.ditamap -->
