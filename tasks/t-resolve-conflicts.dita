@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DOCTYPE DITA Task//EN" "task.dtd">
+<!-- DOCTYPE task PUBLIC "-//OASIS//DOCTYPE DITA Task//EN" "task.dtd" -->
+<!-- DOCTYPE removed for GitHub rendering compatibility -->
 <task id="t-resolve-conflicts">
   <title>Resolving Merge Conflicts</title>
   <shortdesc>Reconcile competing branch changes when target branch updates collide with proposed edits.</shortdesc>
