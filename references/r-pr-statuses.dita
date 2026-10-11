@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DOCTYPE DITA Reference//EN" "reference.dtd">
+<!-- DOCTYPE reference PUBLIC "-//OASIS//DOCTYPE DITA Reference//EN" "reference.dtd" -->
+<!-- DOCTYPE removed for GitHub rendering compatibility -->
 <reference id="r-pr-statuses">
   <title>Pull Request Status Indicators</title>
   <shortdesc>Reference table of continuous integration status indicators and merge readiness states.</shortdesc>
