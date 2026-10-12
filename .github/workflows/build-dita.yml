@@ -13,7 +13,7 @@ jobs:
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
-            -o /src/out/html5 -f html5 --nav-toc=full \
+            -o /src/docs/html5 -f html5 --nav-toc=full \
             --args.css=/src/css/custom.css \
             --args.copycss=yes \
             --args.csspath=css
@@ -22,7 +22,7 @@ jobs:
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
-            -o /src/out/html5-admin -f html5 --nav-toc=full \
+            -o /src/docs/html5-admin -f html5 --nav-toc=full \
             --filter=/src/filters/admin-filter.ditaval \
             --args.css=/src/css/custom.css \
             --args.copycss=yes \
@@ -32,9 +32,9 @@ jobs:
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
             -i /src/ditamaps/github-pull-requests.ditamap \
-            -o /src/out/pdf -f pdf
+            -o /src/docs/pdf -f pdf
 
       - uses: actions/upload-artifact@v4
         with:
           name: dita-output
-          path: out/
+          path: docs/
