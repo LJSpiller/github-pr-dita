@@ -3,6 +3,10 @@
 <map xml:lang="en-us">
   <title>GitHub Pull Request and Review Governance Guide</title>
 
+  <topicmeta>
+    <shortdesc>Select a topic to learn more about GitHub pull request governance and review workflows.</shortdesc>
+  </topicmeta>  
+
   <!-- Imports key definitions from keys.ditamap -->
   <mapref href="keys.ditamap"/>
 
