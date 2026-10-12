@@ -11,8 +11,8 @@
     <topicmeta>
       <navtitle>Concepts and Architecture</navtitle>
     </topicmeta>
-    <topicref href="../concepts/c-pr-lifecycle.dita"/>
-    <topicref href="../concepts/c-branch-strategy.dita"/>
+    <topicref href="concepts/c-pr-lifecycle.dita"/>
+    <topicref href="concepts/c-branch-strategy.dita"/>
   </topicgroup>
 
   <!-- Procedural Workflows -->
@@ -20,9 +20,9 @@
     <topicmeta>
       <navtitle>Procedural Workflows</navtitle>
     </topicmeta>
-    <topicref href="../tasks/t-create-pull-request.dita"/>
-    <topicref href="../tasks/t-review-pull-request.dita"/>
-    <topicref href="../tasks/t-resolve-conflicts.dita"/>
+    <topicref href="tasks/t-create-pull-request.dita"/>
+    <topicref href="tasks/t-review-pull-request.dita"/>
+    <topicref href="tasks/t-resolve-conflicts.dita"/>
   </topicgroup>
 
   <!-- Technical References -->
@@ -30,7 +30,7 @@
     <topicmeta>
       <navtitle>Technical References</navtitle>
     </topicmeta>
-    <topicref href="../references/r-merge-strategies.dita"/>
-    <topicref href="../references/r-pr-statuses.dita"/>
+    <topicref href="references/r-merge-strategies.dita"/>
+    <topicref href="references/r-pr-statuses.dita"/>
   </topicgroup>
 </map>
