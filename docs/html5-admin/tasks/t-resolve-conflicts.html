@@ -1,0 +1,22 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="description" content="Reconcile competing branch changes when target branch updates collide with proposed edits."><title>Resolving Merge Conflicts</title><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"></head><body id="t-resolve-conflicts"><nav class="toc" role="navigation"><ul><li><a href="../concepts/c-pr-lifecycle.html">Understanding the Pull Request Lifecycle</a></li><li><a href="../concepts/c-branch-strategy.html">Branching Governance and Conventions</a></li><li><a href="../tasks/t-create-pull-request.html">Creating a Pull Request</a></li><li><a href="../tasks/t-review-pull-request.html">Reviewing a Pull Request</a></li><li class="active"><a href="../tasks/t-resolve-conflicts.html">Resolving Merge Conflicts</a></li><li><a href="../references/r-merge-strategies.html">Pull Request Merge Strategies</a></li><li><a href="../references/r-pr-statuses.html">Pull Request Status Indicators</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Resolving Merge Conflicts</h1>
+  
+  <div class="body taskbody"><p class="shortdesc">Reconcile competing branch changes when target branch updates collide with proposed edits.</p>
+    <section class="section prereq">
+      <p class="p">Merge conflicts occur when overlapping lines are modified independently across branches.</p>
+    </section>
+    <section><ol class="ol steps"><li class="li step">
+        <span class="ph cmd">Fetch the latest changes from the default branch into your working environment.</span>
+      </li><li class="li step">
+        <span class="ph cmd">Rebase or merge the target branch into your feature branch locally.</span>
+      </li><li class="li step">
+        <span class="ph cmd">Open conflicting files, locate the conflict markers (<code class="ph codeph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>), and select the correct code or text block.</span>
+      </li><li class="li step">
+        <span class="ph cmd">Stage the resolved files and complete the merge commit.</span>
+      </li><li class="li step">
+        <span class="ph cmd">Push the updated branch history to update the active pull request automatically.</span>
+      </li></ol></section>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="previouslink"><strong>Previous topic:</strong> <a class="link" href="t-review-pull-request.html" title="Evaluate proposed changes, leave line-by-line feedback, and submit an approval or change request.">Reviewing a Pull Request</a></div></div></nav></article></main></body></html>
