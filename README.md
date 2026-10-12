@@ -1,7 +1,7 @@
 ![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)
 ![Made with VS Code](https://img.shields.io/badge/Made%20with-VS%20Code-blue?logo=visual-studio-code)
 
-# Technical writing portfolio sample: GitHub pull request governance
+# DITA 1.3 documentation sample with conditional publishing
 
 > **Note:** This repository is a self-guided training project and technical writing portfolio sample created to explore structured authoring, single-sourcing concepts, and DITA 1.3 architecture in Visual Studio Code. It provides a focused workflow sample rather than an exhaustive documentation suite.
 
