@@ -12,7 +12,7 @@ jobs:
       - name: Build HTML5 (all audiences)
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
-            -i /src/ditamaps/github-pull-requests.ditamap \
+            -i /src/github-pull-requests.ditamap \
             -o /src/docs/html5 -f html5 --nav-toc=full \
             --args.css=/src/css/custom.css \
             --args.copycss=yes \
@@ -21,7 +21,7 @@ jobs:
       - name: Build HTML5 (admin audience only)
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
-            -i /src/ditamaps/github-pull-requests.ditamap \
+            -i /src/github-pull-requests.ditamap \
             -o /src/docs/html5-admin -f html5 --nav-toc=full \
             --filter=/src/filters/admin-filter.ditaval \
             --args.css=/src/css/custom.css \
@@ -31,7 +31,7 @@ jobs:
       - name: Build PDF
         run: |
           docker run --rm -v "$PWD":/src ghcr.io/dita-ot/dita-ot:4.4.1 \
-            -i /src/ditamaps/github-pull-requests.ditamap \
+            -i /src/github-pull-requests.ditamap \
             -o /src/docs/pdf -f pdf
 
       - uses: actions/upload-artifact@v4
