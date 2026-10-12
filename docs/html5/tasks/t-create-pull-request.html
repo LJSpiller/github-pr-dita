@@ -1,0 +1,23 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="description" content="Initiate a formal review request to propose branch changes into the primary repository."><title>Creating a Pull Request</title><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"></head><body id="t-create-pull-request"><nav class="toc" role="navigation"><ul><li><a href="../concepts/c-pr-lifecycle.html">Understanding the Pull Request Lifecycle</a></li><li><a href="../concepts/c-branch-strategy.html">Branching Governance and Conventions</a></li><li class="active"><a href="../tasks/t-create-pull-request.html">Creating a Pull Request</a></li><li><a href="../tasks/t-review-pull-request.html">Reviewing a Pull Request</a></li><li><a href="../tasks/t-resolve-conflicts.html">Resolving Merge Conflicts</a></li><li><a href="../references/r-merge-strategies.html">Pull Request Merge Strategies</a></li><li><a href="../references/r-pr-statuses.html">Pull Request Status Indicators</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Creating a Pull Request</h1>
+  
+  <div class="body taskbody"><p class="shortdesc">Initiate a formal review request to propose branch changes into the primary repository.</p>
+    <section class="section prereq">
+      <p class="p">Ensure all local commits are pushed to your topic branch in <span class="ph">acme-docs/knowledge-base</span>.</p>
+      <div class="note important note_important"><span class="note__title">Important:</span> <div class="note__body">
+      Direct commits to the default branch are blocked by repository protection rules. All changes must originate from a pull request.
+    </div></div>
+    </section>
+    <section><ol class="ol steps"><li class="li step">
+        <span class="ph cmd">Navigate to the repository homepage in <span class="ph">GitHub</span>.</span>
+      </li><li class="li step">
+        <span class="ph cmd">Click <strong class="ph b">Compare &amp; pull request</strong> alongside your recently pushed branch.</span>
+      </li><li class="li step">
+        <span class="ph cmd">Provide a descriptive title and fill out the pull request body template.</span>
+      </li><li class="li step">
+        <span class="ph cmd">Assign relevant code owners and reviewers, then click <strong class="ph b">Create pull request</strong>.</span>
+      </li></ol></section>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="nextlink"><strong>Next topic:</strong> <a class="link" href="t-review-pull-request.html" title="Evaluate proposed changes, leave line-by-line feedback, and submit an approval or change request.">Reviewing a Pull Request</a></div></div></nav></article></main></body></html>
