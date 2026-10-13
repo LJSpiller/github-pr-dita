@@ -21,12 +21,12 @@ Three versions are available:
 * **Conditional publishing (`filters/admin-filter.ditaval`):** Attribute-based filtering (`audience="admin"`) to demonstrate role-based content targets.
 * **Topic-based authoring:** Structured separation of Concepts (`c-pr-lifecycle.dita`), Tasks (`t-review-pull-request.dita`), and References (`r-merge-strategies.dita`).
 * **Custom HTML5 styling (`css/custom.css`):** Overrides the default DITA-OT HTML5 presentation to improve navigation, readability, and GitHub Pages presentation.
-* **Automated publishing (.github/workflows/build-dita.yml):** A manually triggered GitHub Actions workflow that runs DITA-OT in a container and produces HTML5, filtered HTML5, and PDF output without installing Java or DITA-OT locally.
+* **Automated publishing (.github/workflows/build-dita.yml):** A manually triggered GitHub Actions workflow that runs DITA-OT 4.4.1 in a Docker container and produces HTML5, filtered HTML5, and PDF output without installing Java or DITA-OT locally.
 
 ## How it is built
 
 1. Content is authored as DITA 1.3 topics and publication map (`github-pull-requests.ditamap`). 
-2. The **Build DITA output** workflow is run manually from the Actions tab. It uses DITA-OT 4.4.1 to build three outputs into `docs/`: `html5/`, `html5-admin` (filtered by `admin-filter.ditaval`), and `pdf/`. 
+2. The **Build DITA output** workflow is run manually from the Actions tab. It uses DITA-OT 4.4.1 in a Docker container to generate HTML5, filtered HTML5, and PDF output, which is downloaded from the workflow artifacts and committed to the `docs/` folder. The three outputs are: `html5/`, `html5-admin/` (filtered by `admin-filter.ditaval`), and `pdf/`. 
 3. The generated output is added to the `docs/` folder, which GitHub Pages serves as the published site. 
 
 ## Known limitations
