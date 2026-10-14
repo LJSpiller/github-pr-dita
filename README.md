@@ -33,7 +33,7 @@ Three versions are available:
 * The PDF is generated from a standard DITA map rather than a bookmap, so topics flow continuously without chapter-level page breaks. Tables may also split across pages. Producing a chapter-per-page PDF would require a separate bookmap, which is outside the scope of this sample. 
 
 ## Authoring tooling
-* Authored and validated using Visual DITA in Visual Studio Code.
+* Authored in Visual Studio Code using a DITA extension. Output was generated and validated through DITA-OT 4.4.1 build workflows.
 * Portions of this documentation were drafted with assistance from AI tooling as part of a structured authoring training exercise using DITA.
 
 ## Repository structure
